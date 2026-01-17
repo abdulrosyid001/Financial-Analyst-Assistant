@@ -2,12 +2,10 @@ import dspy
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from ..utils.config import MODEL_NAME, DEVICE
 
-# Load the model
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, device_map=DEVICE, torch_dtype="auto")
-
 # DSPy LM
-lm = dspy.HFModel(model=model, tokenizer=tokenizer)
+lm = dspy.HFModel(
+    model="TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+)
 
 # Set DSPy settings
 dspy.settings.configure(lm=lm)
