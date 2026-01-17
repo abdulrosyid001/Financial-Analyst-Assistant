@@ -1,0 +1,15 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+sqlalchemy==2.0.23
+pydantic==2.5.0
+dspy-ai==2.4.0
+transformers==4.36.0
+torch==2.1.0
+accelerate==0.25.0
+yfinance==0.2.28
+matplotlib==3.8.2
+reportlab==4.0.7
+pandas==2.1.4
+numpy==1.26.2
+python-multipart==0.0.6
+python-dotenv==1.0.0
